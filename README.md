@@ -79,9 +79,17 @@ static-blog-management-system/
 
 The following instructions assume a Windows environment using WAMP Server.
 
+
 ### 1. Set Up the Project
 
-Install WAMP Server and place the project directory inside:
+**Prerequisites:**
+- Python 3.10 or later
+- WAMP Server (Apache)
+- Tkinter (included with standard Python installations on Windows)
+
+The following instructions assume a Windows environment using WAMP Server.
+
+Place the project directory inside:
 
 ```text
 C:\wamp64\www\static-blog-management-system
@@ -94,13 +102,11 @@ python -m venv myenv
 myenv\Scripts\activate
 ```
 
-Install the required dependencies:
+Install the required external dependency:
 
 ```bash
-pip install -r requirements.txt
+pip install webcolors==25.10.0
 ```
-
-Tkinter is included with standard Python installations on Windows and does not require separate installation through `pip`.
 
 ### 2. Generate Story Pages
 
