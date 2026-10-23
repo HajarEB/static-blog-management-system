@@ -5,19 +5,33 @@ This project was developed as my **Bachelor's Thesis at Al Akhawayn University, 
 
 Story Time is a static website that allows users to browse and read stories organized by tags. It integrates Python-based content management, customizable page styling, and Apache access log analysis to identify and display the ten most viewed stories.
 
+
 ## Screenshots
 
 ### Home Page
 ![Home Page](screenshots/home.png)
 
 ### Story Library
-![Story Library](screenshots/library.png)
+The library displays the available stories and their associated tags.
+
+**Available Stories**
+
+![Story Library - Stories](screenshots/library_stories.png)
+
+**Available Tags**
+
+![Story Library - Tags](screenshots/library_tags.png)
+
+### Story Page
+Each story page displays its title, content, publication date, and tags.
+
+![Story Page](screenshots/story.png)
 
 ### Top 10 Stories
 ![Top 10 Stories](screenshots/top10.png)
 
 ### Page Customization
-![Tkinter Color Customization](screenshots/customization.png)
+![Page Customization](screenshots/customization.png)
 
 ## Features
 
