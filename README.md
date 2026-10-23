@@ -3,7 +3,7 @@
 
 This project was developed as my **Bachelor's Thesis at Al Akhawayn University, Morocco (2023)**.
 
-Story Time is a static website that allows users to browse and read stories organized by categories and tags. It integrates Python-based content management, customizable page styling, and Apache access log analysis to identify and display the ten most viewed stories.
+Story Time is a static website that allows users to browse and read stories organized by tags. It integrates Python-based content management, customizable page styling, and Apache access log analysis to identify and display the ten most viewed stories.
 
 ## Features
 
@@ -12,12 +12,11 @@ Story Time is a static website that allows users to browse and read stories orga
 - Extract story titles, publication dates, tags, and content.
 - Maintain a library of available stories and tags.
 - Generate dedicated pages for each tag, linking to related stories.
-- Update generated pages when the story collection changes.
 
 ### 2. Apache Log Analysis
-- Parse Apache access logs to identify story visits.
-- Count the number of views for each story.
-- Rank stories based on their view counts.
+- Parse Apache access logs to identify requests for story pages.
+- Count the recorded requests for each story.
+- Rank stories based on their request counts.
 - Generate a Top 10 Stories page featuring the most viewed available stories.
 
 ### 3. Page Customization
@@ -92,10 +91,17 @@ To generate the story pages, tag pages, and library:
 python update.py
 ```
 
-To integrate a story using its filename:
+To integrate a story, run:
 
 ```bash
 python integrate.py
+```
+
+The script prompts for the filename of a story located in the `Content` directory:
+
+```text
+Please Enter the New File Name
+story.txt
 ```
 
 ### 3. Generate the Top 10 Stories
@@ -106,7 +112,9 @@ Run:
 python views.py
 ```
 
-The script processes Apache access logs, counts story views, and updates the Top 10 Stories page based on the rankings.
+The script processes Apache's `access.log` file to identify requests for story pages, extract their filenames, and count their occurrences.
+
+It ranks the stories by their recorded request counts and updates the Top 10 Stories page with up to ten of the most viewed stories that still exist in the generated HTML directory.
 
 ### 4. Customize Story Pages
 
@@ -118,6 +126,8 @@ python stylePage.py
 
 Choose between command-line styling and the Tkinter graphical interface to customize the appearance of story pages.
 
+The selected colors are applied by modifying the corresponding CSS properties.
+
 ### 5. Access the Website
 
 Start Apache through WAMP Server and open:
@@ -128,4 +138,4 @@ http://localhost/static-blog-management-system/MainFiles/home.HTML
 
 ## Project Overview
 
-The project combines static web development with Python automation and web server log analysis. It demonstrates how story content can be transformed into interconnected HTML pages, organized through tags, and ranked using visitor activity recorded in Apache access logs.
+The project combines static web development with Python automation and Apache web server log analysis. It demonstrates how structured story content can be transformed into interconnected HTML pages, organized through tags, and ranked using access log data.
