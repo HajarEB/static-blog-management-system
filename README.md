@@ -4,11 +4,28 @@
 This project was developed as my **Bachelor's Thesis at Al Akhawayn University, Morocco (2023)**.
 
 Story Time is a static website that allows users to browse and read stories organized by tags. It integrates Python-based content management, customizable page styling, and Apache access log analysis to identify and display the ten most viewed stories.
+![Home Page](screenshots/home.png)
+
+## Features
+
+### 1. Story Management
+- Generate HTML story pages automatically from structured text files.
+- Extract story titles, publication dates, tags, and content.
+- Maintain a library of available stories and tags.
+- Generate dedicated pages for each tag, linking to related stories.
+
+### 2. Apache Log Analysis
+- Parse Apache access logs to identify requests for story pages.
+- Count the recorded requests for each story.
+- Rank stories based on their request counts.
+- Generate a Top 10 Stories page featuring the most viewed available stories.
+
+### 3. Page Customization
+- Customize story title, text, background, tag, and border colors.
+- Select colors through a Tkinter graphical interface or the command line.
+- Apply selected colors by updating CSS properties.
 
 ## Screenshots
-
-### Home Page
-![Home Page](screenshots/home.png)
 
 ### Story Library
 The library displays the available stories and their associated tags.
@@ -31,25 +48,6 @@ Each story page displays its title, content, publication date, and tags.
 
 ### Page Customization
 ![Page Customization](screenshots/customization.png)
-
-## Features
-
-### 1. Story Management
-- Generate HTML story pages automatically from structured text files.
-- Extract story titles, publication dates, tags, and content.
-- Maintain a library of available stories and tags.
-- Generate dedicated pages for each tag, linking to related stories.
-
-### 2. Apache Log Analysis
-- Parse Apache access logs to identify requests for story pages.
-- Count the recorded requests for each story.
-- Rank stories based on their request counts.
-- Generate a Top 10 Stories page featuring the most viewed available stories.
-
-### 3. Page Customization
-- Customize story title, text, background, tag, and border colors.
-- Select colors through a Tkinter graphical interface or the command line.
-- Apply selected colors by updating CSS properties.
 
 ## Technologies
 
