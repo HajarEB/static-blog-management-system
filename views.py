@@ -51,7 +51,7 @@ def initializeHTML():
 def readLogFile():
     global content
     log_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'logs', 'access.log')
-    searchedLine = "CapstoneProject/HTMLFiles"
+    searchedLine = "static-blog-management-system/HTMLFiles"
     HTMLExtension= ".html"
     with open(log_file_path, 'r', encoding='utf-8') as currentFile:
         while True:
@@ -138,12 +138,12 @@ def processContent():
 
 def saveFileName(arr):
     global content
-    indicator1 = "CapstoneProject"
+    indicator1 = "static-blog-management-system"
     indicator2 = "HTMLFiles"
-    # ['/CapstoneProject/HTMLFiles/SOLARSNOOKS.html']
+    # ['/static-blog-management-system/HTMLFiles/SOLARSNOOKS.html']
     for link in arr:
         res = link.split('/')
-        # ['CapstoneProject', 'HTMLFiles', 'SOLARSNOOKS
+        # ['static-blog-management-system', 'HTMLFiles', 'SOLARSNOOKS
         for word in res:
             if word!= indicator1 and word!= indicator2 and word!='' : 
                 content.append(word)
