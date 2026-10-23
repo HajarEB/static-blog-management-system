@@ -5,7 +5,6 @@ This project was developed as my **Bachelor's Thesis at Al Akhawayn University, 
 
 Story Time is a static website that allows users to browse and read stories organized by tags. It integrates Python-based content management, customizable page styling, and Apache access log analysis to identify and display the ten most viewed stories.
 
-
 ## Screenshots
 
 ### Home Page
@@ -66,6 +65,7 @@ static-blog-management-system/
 ├── Content/                 # Story text files
 ├── HTMLFiles/               # Generated story and tag pages
 ├── MainFiles/               # Website pages and stylesheets
+├── screenshots/             # Website and GUI screenshots
 ├── integrate.py             # Story integration
 ├── update.py                # Story and library generation
 ├── views.py                 # Apache log analysis and ranking
@@ -76,6 +76,8 @@ static-blog-management-system/
 ```
 
 ## Installation and Usage
+
+The following instructions assume a Windows environment using WAMP Server.
 
 ### 1. Set Up the Project
 
@@ -98,6 +100,8 @@ Install the required dependencies:
 pip install -r requirements.txt
 ```
 
+Tkinter is included with standard Python installations on Windows and does not require separate installation through `pip`.
+
 ### 2. Generate Story Pages
 
 Story files are stored in the `Content` directory and follow this structure:
@@ -113,24 +117,26 @@ TAG
 Once upon a time...
 ```
 
-To generate the story pages, tag pages, and library:
+To generate or regenerate all story pages, tag pages, and the library:
 
 ```bash
 python update.py
 ```
 
-To integrate a story, run:
+To integrate a story from the `Content` directory:
 
 ```bash
 python integrate.py
 ```
 
-The script prompts for the filename of a story located in the `Content` directory:
+The script prompts for the filename:
 
 ```text
 Please Enter the New File Name
 story.txt
 ```
+
+Both scripts use the story generation functions in `update.py`. The full update also synchronizes the generated pages with the current contents of the `Content` directory.
 
 ### 3. Generate the Top 10 Stories
 
@@ -143,6 +149,14 @@ python views.py
 The script processes Apache's `access.log` file to identify requests for story pages, extract their filenames, and count their occurrences.
 
 It ranks the stories by their recorded request counts and updates the Top 10 Stories page with up to ten of the most viewed stories that still exist in the generated HTML directory.
+
+The Apache access log is typically located at:
+
+```text
+C:\wamp64\logs\access.log
+```
+
+The log path is configured in `views.py` and can be adjusted to match the local Apache configuration.
 
 ### 4. Customize Story Pages
 
