@@ -1,0 +1,50 @@
+.header{
+    margin:-1%;
+    padding-left:5%;
+    padding-top: 2%;
+    background-color: rgb(1, 3, 30);
+    height: 6%;
+    border-bottom: 2px solid black; 
+    position: relative;
+    
+}
+body{
+    background-image: url(pictures/image5.jpg);
+}
+.barLink{
+    padding-right: 5%; 
+    float: right;
+    text-decoration: none;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 23%;
+    margin-left: 10%;
+    color: rgb(93, 42, 5);
+    float: left;
+}
+.tagLinks{
+    top: 50%;
+    margin: -150px 0 0 -10px;
+    position: relative;
+    float: right;
+    padding: 2%;
+    margin-right: 30%;
+}
+.tagLinks a{
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid rgb(138, 84, 84);
+    padding: 10%;
+    width: 100%;
+}
