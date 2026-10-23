@@ -133,7 +133,7 @@ The selected colors are applied by modifying the corresponding CSS properties.
 Start Apache through WAMP Server and open:
 
 ```text
-http://localhost/static-blog-management-system/MainFiles/home.HTML
+http://localhost/static-blog-management-system/MainFiles/home.html
 ```
 
 ## Project Overview
