@@ -1,0 +1,70 @@
+.header{
+    margin:-1%;
+    padding-left:5%;
+    padding-top: 2%;
+    background-color: rgb(1, 3, 30);
+    height: 6%;
+    border-bottom: 2px solid black; 
+    position: relative;
+    margin-bottom:2%;
+    
+}
+
+.barLink{
+    padding-right: 5%; 
+    float: right;
+    text-decoration: none;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: white; 
+
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-image: url(../pictures/image6.jpg);
+}
+ 
+
+.recentStories a {
+    border: 2px solid rgb(151, 6, 161);
+    padding: 30px;
+    color:rgb(147, 95, 141);
+}
+
+.recentStories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.recentStories .barLink {
+    float: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    max-width: 500px;
+    min-height: 60px;
+    padding: 15px 20px;
+    margin: 0;
+    box-sizing: border-box;
+
+    border: 2px solid rgb(151, 6, 161);
+    background-color: transparent;
+    color: rgb(178, 24, 189);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
