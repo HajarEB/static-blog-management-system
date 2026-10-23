@@ -35,7 +35,7 @@ Story Time is a static website that allows users to browse and read stories orga
 ## Project Structure
 
 ```text
-CapstoneProject/
+static-blog-management-system/
 ├── Content/                 # Story text files
 ├── HTMLFiles/               # Generated story and tag pages
 ├── MainFiles/               # Website pages and stylesheets
@@ -123,7 +123,7 @@ Choose between command-line styling and the Tkinter graphical interface to custo
 Start Apache through WAMP Server and open:
 
 ```text
-http://localhost/CapstoneProject/MainFiles/home.HTML
+http://localhost/static-blog-management-system/MainFiles/home.HTML
 ```
 
 ## Project Overview
