@@ -55,7 +55,7 @@ CapstoneProject/
 Install WAMP Server and place the project directory inside:
 
 ```text
-C:\wamp64\www\CapstoneProject
+C:\wamp64\www\static-blog-management-system
 ```
 
 Create and activate a Python virtual environment:
